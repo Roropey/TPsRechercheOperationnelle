@@ -1,0 +1,35 @@
+##### Model #####
+
+##### Sets #####
+
+set PRODUITS;
+
+set MAGASINS;
+
+set DEMANDES;
+
+##### Variables #####
+
+var quantite{i in PRODUITS, j in MAGASINS, k in DEMANDES}, integer, >=0;
+
+##### Constants: Data to load #####
+
+param demande{i in PRODUITS, k in DEMANDES};
+
+param stock{i in PRODUITS, j in MAGASINS};
+
+param coutUnitaire{i in PRODUITS, j in MAGASINS};
+
+##### Constraints #####
+s.t. RespectCommande{i in PRODUITS, k in DEMANDES}:
+ sum{j in MAGASINS} quantite[i,j,k] = demande[i,k];
+
+ RespectStocks{i in PRODUITS, j in MAGASINS}: 
+ sum{k in DEMANDES} quantite[i,j,k] <= stock[i,j];
+
+##### Objective #####
+
+minimize CoutTot: 
+sum{i in PRODUITS, j in MAGASINS} (sum{k in DEMANDES} quantite[i,j,k])*coutUnitaire[i,j];
+
+end;

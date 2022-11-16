@@ -1,0 +1,25 @@
+##### Model #####
+
+##### Sets #####
+
+set PERSONNES;
+
+set POSTES;
+
+##### Variables #####
+
+var affectation{i in PERSONNES, j in POSTES}, binary;
+
+##### Constants: Data to load #####
+
+param coutFormation{i in PERSONNES, j in POSTES};
+
+##### Constraints #####
+s.t. RespectAttributionPersonne{i in PERSONNES}: sum{j in POSTES} affectation[i,j] = 1;
+ RespectAttributionPostes{j in POSTES}: sum{i in PERSONNES} affectation[i,j] = 1;
+
+##### Objective #####
+
+minimize CoutTot: sum{i in PERSONNES, j in POSTES} affectation[i,j]*coutFormation[i,j];
+
+end;

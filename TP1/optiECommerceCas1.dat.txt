@@ -1,0 +1,29 @@
+#Donnees du sujet pour l'optimisation du e-commerce cas 1
+
+data;
+
+set FLUIDES :=
+F1
+F2;
+
+set MAGASINS :=
+M1
+M2
+M3;
+
+set DEMANDES :=
+D1
+D2;
+
+param demande: D1 D2 :=
+F1 2 1
+F2 0 3;
+
+param stock: M1 M2 M3:=
+F1 2.5 1 2 
+F2 1 2 1; 
+
+param coutUnitaire: M1 M2 M3:=
+F1 1 2 3
+F2 1 3 2; 
+end;

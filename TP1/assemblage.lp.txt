@@ -1,0 +1,14 @@
+\* Problème : Assemblage de voiture *\
+
+Maximize
+    Marge: + 10000 nL + 9000 nS
+
+Subject to
+    TempsMaxTravail: + 0.06 nL + 0.05 nS  <= 60
+    EspaceParkingMax: + 10 nL + 20 nS <= 15000
+    MaxProductionL: + nL <= 800
+
+int nL
+int nS
+
+End

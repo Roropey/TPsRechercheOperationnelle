@@ -42,8 +42,8 @@ s.t. RespectCommande{i in PRODUITS, k in DEMANDES}:
 ##### Objective #####
 
 minimize CoutTot: 
-(sum{i in PRODUITS, j in MAGASINS} (sum{k in DEMANDES} quantite[i,j,k])*coutUnitaire[i,j]) +
 (sum{j in MAGASINS, k in DEMANDES} (sum{i in PRODUITS} quantite[i,j,k])*coutVariable[j,k]) +
 (sum{j in MAGASINS, k in DEMANDES} colisOuPas[j,k]*coutFixe[j,k]);
 
+###(sum{i in PRODUITS, j in MAGASINS} (sum{k in DEMANDES} quantite[i,j,k])*coutUnitaire[i,j]) +
 end;

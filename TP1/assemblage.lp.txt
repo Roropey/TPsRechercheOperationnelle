@@ -1,7 +1,7 @@
 \* Problème : Assemblage de voiture *\
 
 Maximize
-    Marge: + 10000 nL + 9000 nS
+    MargeTot: + 10000 nL + 9000 nS
 
 Subject to
     TempsMaxTravail: + 0.06 nL + 0.05 nS  <= 60

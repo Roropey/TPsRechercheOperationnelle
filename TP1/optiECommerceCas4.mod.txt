@@ -1,0 +1,51 @@
+##### Model #####
+
+##### Sets #####
+
+set MAGASIN;
+
+set LIEUX;
+
+##### Variables #####
+
+var departArrivee{i in LIEUX, j in LIEUX}, binary;
+
+var ordrePassage{i in LIEUX}, integer,>=0;
+
+##### Constants: Data to load #####
+
+param distances{i in LIEUX, k in LIEUX};
+
+param taille;
+
+##### Constraints #####
+s.t. quunDepart{i in LIEUX}:
+ sum{j in LIEUX} departArrivee[i,j] = 1;
+
+ quunArrivee{j in LIEUX}: 
+ sum{i in LIEUX} departArrivee[i,j] = 1;
+ /*
+ ordreUnique {i in LIEUX,j in LIEUX : i!=j}:
+ ordrePassage[i]   ordrePassage[j] ;
+*/
+
+ creationOrdreEg {i in LIEUX, j in LIEUX diff MAGASIN : i!=j}:
+ (ordrePassage[i] + 1 - ordrePassage[j]) - (1-departArrivee[i,j]) <= 0;
+
+ creationOrdreInEg {i in LIEUX, j in LIEUX diff MAGASIN : i!=j}:
+ (1-departArrivee[i,j]) - taille*(ordrePassage[j] - ordrePassage[i] - 1) <= 0;
+
+ deffOrdreFinEg {i in LIEUX diff MAGASIN, j in LIEUX inter MAGASIN}:
+ taille-ordrePassage[i] - (1-departArrivee[i,j]) <= 0; 
+
+ deffOrdreFinInEg {i in LIEUX diff MAGASIN, j in LIEUX inter MAGASIN}:
+ (1-departArrivee[i,j]) - (taille-ordrePassage[i]) <= 0; 
+
+ deffOrdreDebut {i in LIEUX inter MAGASIN}:
+ ordrePassage[i] = 1;
+
+
+##### Objective #####
+
+minimize distancesParcourusTot:  sum{i in LIEUX, j in LIEUX} departArrivee[i,j]*distances[i,j];
+end;

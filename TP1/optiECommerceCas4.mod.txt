@@ -14,7 +14,7 @@ var ordrePassage{i in LIEUX}, integer,>=0;
 
 ##### Constants: Data to load #####
 
-param distances{i in LIEUX, k in LIEUX};
+param distances{i in LIEUX, j in LIEUX};
 
 param taille;
 
@@ -24,25 +24,28 @@ s.t. quunDepart{i in LIEUX}:
 
  quunArrivee{j in LIEUX}: 
  sum{i in LIEUX} departArrivee[i,j] = 1;
- /*
- ordreUnique {i in LIEUX,j in LIEUX : i!=j}:
- ordrePassage[i]   ordrePassage[j] ;
-*/
-
- creationOrdreEg {i in LIEUX, j in LIEUX diff MAGASIN : i!=j}:
- (ordrePassage[i] + 1 - ordrePassage[j]) - (1-departArrivee[i,j]) <= 0;
-
- creationOrdreInEg {i in LIEUX, j in LIEUX diff MAGASIN : i!=j}:
- (1-departArrivee[i,j]) - taille*(ordrePassage[j] - ordrePassage[i] - 1) <= 0;
-
- deffOrdreFinEg {i in LIEUX diff MAGASIN, j in LIEUX inter MAGASIN}:
- taille-ordrePassage[i] - (1-departArrivee[i,j]) <= 0; 
-
- deffOrdreFinInEg {i in LIEUX diff MAGASIN, j in LIEUX inter MAGASIN}:
- (1-departArrivee[i,j]) - (taille-ordrePassage[i]) <= 0; 
-
- deffOrdreDebut {i in LIEUX inter MAGASIN}:
+ 
+ departDiffArrivee:
+ sum{i in LIEUX} departArrivee[i,i] = 0;
+ 
+ initOrdre {i in MAGASIN}:
  ordrePassage[i] = 1;
+
+ recOrdreBigMSup{i in LIEUX, j in (LIEUX diff MAGASIN) : i!=j}:
+ ordrePassage[j]-(ordrePassage[i]+1) <= taille*(1-departArrivee[i,j]);
+
+ recOrdreBigMInf{i in LIEUX, j in (LIEUX diff MAGASIN) : i!=j}:
+ ordrePassage[j]-(ordrePassage[i]+1) >= -taille*(1-departArrivee[i,j]);
+
+/*
+ termOrdreEg{i in (LIEUX diff MAGASIN), j in MAGASIN}:
+ taille-ordrePassage[i]-(1-departArrivee[i,j]) <= 0;
+
+ termOrdreInEg{i in (LIEUX diff MAGASIN), j in MAGASIN}:
+ (1-departArrivee[i,j]) - (taille-ordrePassage[i]) <= 0;
+*/
+ diffOrdre:
+ sum{i in LIEUX} ordrePassage[i] = taille*(taille+1)/2;
 
 
 ##### Objective #####

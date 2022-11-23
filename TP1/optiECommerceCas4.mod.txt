@@ -38,15 +38,9 @@ s.t. quunDepart{i in LIEUX}:
  ordrePassage[j]-(ordrePassage[i]+1) >= -taille*(1-departArrivee[i,j]);
 
 /*
- termOrdreEg{i in (LIEUX diff MAGASIN), j in MAGASIN}:
- taille-ordrePassage[i]-(1-departArrivee[i,j]) <= 0;
-
- termOrdreInEg{i in (LIEUX diff MAGASIN), j in MAGASIN}:
- (1-departArrivee[i,j]) - (taille-ordrePassage[i]) <= 0;
-*/
  diffOrdre:
  sum{i in LIEUX} ordrePassage[i] = taille*(taille+1)/2;
-
+*/
 
 ##### Objective #####
 

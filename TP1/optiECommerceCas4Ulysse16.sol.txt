@@ -1,0 +1,1537 @@
+Problem:    optiECommerceCas4
+Rows:       485
+Columns:    272 (272 integer, 256 binary)
+Non-zeros:  2119
+Status:     INTEGER OPTIMAL
+Objective:  distancesParcourusTot = 6859 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 quunDepart[1]
+                                   1             1             = 
+     2 quunDepart[2]
+                                   1             1             = 
+     3 quunDepart[3]
+                                   1             1             = 
+     4 quunDepart[4]
+                                   1             1             = 
+     5 quunDepart[5]
+                                   1             1             = 
+     6 quunDepart[6]
+                                   1             1             = 
+     7 quunDepart[7]
+                                   1             1             = 
+     8 quunDepart[8]
+                                   1             1             = 
+     9 quunDepart[9]
+                                   1             1             = 
+    10 quunDepart[10]
+                                   1             1             = 
+    11 quunDepart[11]
+                                   1             1             = 
+    12 quunDepart[12]
+                                   1             1             = 
+    13 quunDepart[13]
+                                   1             1             = 
+    14 quunDepart[14]
+                                   1             1             = 
+    15 quunDepart[15]
+                                   1             1             = 
+    16 quunDepart[16]
+                                   1             1             = 
+    17 quunArrivee[1]
+                                   1             1             = 
+    18 quunArrivee[2]
+                                   1             1             = 
+    19 quunArrivee[3]
+                                   1             1             = 
+    20 quunArrivee[4]
+                                   1             1             = 
+    21 quunArrivee[5]
+                                   1             1             = 
+    22 quunArrivee[6]
+                                   1             1             = 
+    23 quunArrivee[7]
+                                   1             1             = 
+    24 quunArrivee[8]
+                                   1             1             = 
+    25 quunArrivee[9]
+                                   1             1             = 
+    26 quunArrivee[10]
+                                   1             1             = 
+    27 quunArrivee[11]
+                                   1             1             = 
+    28 quunArrivee[12]
+                                   1             1             = 
+    29 quunArrivee[13]
+                                   1             1             = 
+    30 quunArrivee[14]
+                                   1             1             = 
+    31 quunArrivee[15]
+                                   1             1             = 
+    32 quunArrivee[16]
+                                   1             1             = 
+    33 departDiffArrivee
+                                   0            -0             = 
+    34 initOrdre[1]                1             1             = 
+    35 recOrdreBigMSup[1,2]
+                                  13                          17 
+    36 recOrdreBigMSup[1,3]
+                                  12                          17 
+    37 recOrdreBigMSup[1,4]
+                                  14                          17 
+    38 recOrdreBigMSup[1,5]
+                                   7                          17 
+    39 recOrdreBigMSup[1,6]
+                                   5                          17 
+    40 recOrdreBigMSup[1,7]
+                                   4                          17 
+    41 recOrdreBigMSup[1,8]
+                                  15                          17 
+    42 recOrdreBigMSup[1,9]
+                                   9                          17 
+    43 recOrdreBigMSup[1,10]
+                                  10                          17 
+    44 recOrdreBigMSup[1,11]
+                                   8                          17 
+    45 recOrdreBigMSup[1,12]
+                                   3                          17 
+    46 recOrdreBigMSup[1,13]
+                                   2                          17 
+    47 recOrdreBigMSup[1,14]
+                                  17                          17 
+    48 recOrdreBigMSup[1,15]
+                                   6                          17 
+    49 recOrdreBigMSup[1,16]
+                                  11                          17 
+    50 recOrdreBigMSup[2,3]
+                                  -1                          17 
+    51 recOrdreBigMSup[2,4]
+                                  17                          17 
+    52 recOrdreBigMSup[2,5]
+                                  -6                          17 
+    53 recOrdreBigMSup[2,6]
+                                  -8                          17 
+    54 recOrdreBigMSup[2,7]
+                                  -9                          17 
+    55 recOrdreBigMSup[2,8]
+                                   2                          17 
+    56 recOrdreBigMSup[2,9]
+                                  -4                          17 
+    57 recOrdreBigMSup[2,10]
+                                  -3                          17 
+    58 recOrdreBigMSup[2,11]
+                                  -5                          17 
+    59 recOrdreBigMSup[2,12]
+                                 -10                          17 
+    60 recOrdreBigMSup[2,13]
+                                 -11                          17 
+    61 recOrdreBigMSup[2,14]
+                                 -12                          17 
+    62 recOrdreBigMSup[2,15]
+                                  -7                          17 
+    63 recOrdreBigMSup[2,16]
+                                  -2                          17 
+    64 recOrdreBigMSup[3,2]
+                                  17                          17 
+    65 recOrdreBigMSup[3,4]
+                                   2                          17 
+    66 recOrdreBigMSup[3,5]
+                                  -5                          17 
+    67 recOrdreBigMSup[3,6]
+                                  -7                          17 
+    68 recOrdreBigMSup[3,7]
+                                  -8                          17 
+    69 recOrdreBigMSup[3,8]
+                                   3                          17 
+    70 recOrdreBigMSup[3,9]
+                                  -3                          17 
+    71 recOrdreBigMSup[3,10]
+                                  -2                          17 
+    72 recOrdreBigMSup[3,11]
+                                  -4                          17 
+    73 recOrdreBigMSup[3,12]
+                                  -9                          17 
+    74 recOrdreBigMSup[3,13]
+                                 -10                          17 
+    75 recOrdreBigMSup[3,14]
+                                 -11                          17 
+    76 recOrdreBigMSup[3,15]
+                                  -6                          17 
+    77 recOrdreBigMSup[3,16]
+                                  -1                          17 
+    78 recOrdreBigMSup[4,2]
+                                  -1                          17 
+    79 recOrdreBigMSup[4,3]
+                                  -2                          17 
+    80 recOrdreBigMSup[4,5]
+                                  -7                          17 
+    81 recOrdreBigMSup[4,6]
+                                  -9                          17 
+    82 recOrdreBigMSup[4,7]
+                                 -10                          17 
+    83 recOrdreBigMSup[4,8]
+                                  17                          17 
+    84 recOrdreBigMSup[4,9]
+                                  -5                          17 
+    85 recOrdreBigMSup[4,10]
+                                  -4                          17 
+    86 recOrdreBigMSup[4,11]
+                                  -6                          17 
+    87 recOrdreBigMSup[4,12]
+                                 -11                          17 
+    88 recOrdreBigMSup[4,13]
+                                 -12                          17 
+    89 recOrdreBigMSup[4,14]
+                                 -13                          17 
+    90 recOrdreBigMSup[4,15]
+                                  -8                          17 
+    91 recOrdreBigMSup[4,16]
+                                  -3                          17 
+    92 recOrdreBigMSup[5,2]
+                                   6                          17 
+    93 recOrdreBigMSup[5,3]
+                                   5                          17 
+    94 recOrdreBigMSup[5,4]
+                                   7                          17 
+    95 recOrdreBigMSup[5,6]
+                                  -2                          17 
+    96 recOrdreBigMSup[5,7]
+                                  -3                          17 
+    97 recOrdreBigMSup[5,8]
+                                   8                          17 
+    98 recOrdreBigMSup[5,9]
+                                   2                          17 
+    99 recOrdreBigMSup[5,10]
+                                   3                          17 
+   100 recOrdreBigMSup[5,11]
+                                  17                          17 
+   101 recOrdreBigMSup[5,12]
+                                  -4                          17 
+   102 recOrdreBigMSup[5,13]
+                                  -5                          17 
+   103 recOrdreBigMSup[5,14]
+                                  -6                          17 
+   104 recOrdreBigMSup[5,15]
+                                  -1                          17 
+   105 recOrdreBigMSup[5,16]
+                                   4                          17 
+   106 recOrdreBigMSup[6,2]
+                                   8                          17 
+   107 recOrdreBigMSup[6,3]
+                                   7                          17 
+   108 recOrdreBigMSup[6,4]
+                                   9                          17 
+   109 recOrdreBigMSup[6,5]
+                                   2                          17 
+   110 recOrdreBigMSup[6,7]
+                                  -1                          17 
+   111 recOrdreBigMSup[6,8]
+                                  10                          17 
+   112 recOrdreBigMSup[6,9]
+                                   4                          17 
+   113 recOrdreBigMSup[6,10]
+                                   5                          17 
+   114 recOrdreBigMSup[6,11]
+                                   3                          17 
+   115 recOrdreBigMSup[6,12]
+                                  -2                          17 
+   116 recOrdreBigMSup[6,13]
+                                  -3                          17 
+   117 recOrdreBigMSup[6,14]
+                                  -4                          17 
+   118 recOrdreBigMSup[6,15]
+                                  17                          17 
+   119 recOrdreBigMSup[6,16]
+                                   6                          17 
+   120 recOrdreBigMSup[7,2]
+                                   9                          17 
+   121 recOrdreBigMSup[7,3]
+                                   8                          17 
+   122 recOrdreBigMSup[7,4]
+                                  10                          17 
+   123 recOrdreBigMSup[7,5]
+                                   3                          17 
+   124 recOrdreBigMSup[7,6]
+                                  17                          17 
+   125 recOrdreBigMSup[7,8]
+                                  11                          17 
+   126 recOrdreBigMSup[7,9]
+                                   5                          17 
+   127 recOrdreBigMSup[7,10]
+                                   6                          17 
+   128 recOrdreBigMSup[7,11]
+                                   4                          17 
+   129 recOrdreBigMSup[7,12]
+                                  -1                          17 
+   130 recOrdreBigMSup[7,13]
+                                  -2                          17 
+   131 recOrdreBigMSup[7,14]
+                                  -3                          17 
+   132 recOrdreBigMSup[7,15]
+                                   2                          17 
+   133 recOrdreBigMSup[7,16]
+                                   7                          17 
+   134 recOrdreBigMSup[8,2]
+                                  -2                          17 
+   135 recOrdreBigMSup[8,3]
+                                  -3                          17 
+   136 recOrdreBigMSup[8,4]
+                                  -1                          17 
+   137 recOrdreBigMSup[8,5]
+                                  -8                          17 
+   138 recOrdreBigMSup[8,6]
+                                 -10                          17 
+   139 recOrdreBigMSup[8,7]
+                                 -11                          17 
+   140 recOrdreBigMSup[8,9]
+                                  -6                          17 
+   141 recOrdreBigMSup[8,10]
+                                  -5                          17 
+   142 recOrdreBigMSup[8,11]
+                                  -7                          17 
+   143 recOrdreBigMSup[8,12]
+                                 -12                          17 
+   144 recOrdreBigMSup[8,13]
+                                 -13                          17 
+   145 recOrdreBigMSup[8,14]
+                                 -14                          17 
+   146 recOrdreBigMSup[8,15]
+                                  -9                          17 
+   147 recOrdreBigMSup[8,16]
+                                  -4                          17 
+   148 recOrdreBigMSup[9,2]
+                                   4                          17 
+   149 recOrdreBigMSup[9,3]
+                                   3                          17 
+   150 recOrdreBigMSup[9,4]
+                                   5                          17 
+   151 recOrdreBigMSup[9,5]
+                                  -2                          17 
+   152 recOrdreBigMSup[9,6]
+                                  -4                          17 
+   153 recOrdreBigMSup[9,7]
+                                  -5                          17 
+   154 recOrdreBigMSup[9,8]
+                                   6                          17 
+   155 recOrdreBigMSup[9,10]
+                                  17                          17 
+   156 recOrdreBigMSup[9,11]
+                                  -1                          17 
+   157 recOrdreBigMSup[9,12]
+                                  -6                          17 
+   158 recOrdreBigMSup[9,13]
+                                  -7                          17 
+   159 recOrdreBigMSup[9,14]
+                                  -8                          17 
+   160 recOrdreBigMSup[9,15]
+                                  -3                          17 
+   161 recOrdreBigMSup[9,16]
+                                   2                          17 
+   162 recOrdreBigMSup[10,2]
+                                   3                          17 
+   163 recOrdreBigMSup[10,3]
+                                   2                          17 
+   164 recOrdreBigMSup[10,4]
+                                   4                          17 
+   165 recOrdreBigMSup[10,5]
+                                  -3                          17 
+   166 recOrdreBigMSup[10,6]
+                                  -5                          17 
+   167 recOrdreBigMSup[10,7]
+                                  -6                          17 
+   168 recOrdreBigMSup[10,8]
+                                   5                          17 
+   169 recOrdreBigMSup[10,9]
+                                  -1                          17 
+   170 recOrdreBigMSup[10,11]
+                                  -2                          17 
+   171 recOrdreBigMSup[10,12]
+                                  -7                          17 
+   172 recOrdreBigMSup[10,13]
+                                  -8                          17 
+   173 recOrdreBigMSup[10,14]
+                                  -9                          17 
+   174 recOrdreBigMSup[10,15]
+                                  -4                          17 
+   175 recOrdreBigMSup[10,16]
+                                  17                          17 
+   176 recOrdreBigMSup[11,2]
+                                   5                          17 
+   177 recOrdreBigMSup[11,3]
+                                   4                          17 
+   178 recOrdreBigMSup[11,4]
+                                   6                          17 
+   179 recOrdreBigMSup[11,5]
+                                  -1                          17 
+   180 recOrdreBigMSup[11,6]
+                                  -3                          17 
+   181 recOrdreBigMSup[11,7]
+                                  -4                          17 
+   182 recOrdreBigMSup[11,8]
+                                   7                          17 
+   183 recOrdreBigMSup[11,9]
+                                  17                          17 
+   184 recOrdreBigMSup[11,10]
+                                   2                          17 
+   185 recOrdreBigMSup[11,12]
+                                  -5                          17 
+   186 recOrdreBigMSup[11,13]
+                                  -6                          17 
+   187 recOrdreBigMSup[11,14]
+                                  -7                          17 
+   188 recOrdreBigMSup[11,15]
+                                  -2                          17 
+   189 recOrdreBigMSup[11,16]
+                                   3                          17 
+   190 recOrdreBigMSup[12,2]
+                                  10                          17 
+   191 recOrdreBigMSup[12,3]
+                                   9                          17 
+   192 recOrdreBigMSup[12,4]
+                                  11                          17 
+   193 recOrdreBigMSup[12,5]
+                                   4                          17 
+   194 recOrdreBigMSup[12,6]
+                                   2                          17 
+   195 recOrdreBigMSup[12,7]
+                                  17                          17 
+   196 recOrdreBigMSup[12,8]
+                                  12                          17 
+   197 recOrdreBigMSup[12,9]
+                                   6                          17 
+   198 recOrdreBigMSup[12,10]
+                                   7                          17 
+   199 recOrdreBigMSup[12,11]
+                                   5                          17 
+   200 recOrdreBigMSup[12,13]
+                                  -1                          17 
+   201 recOrdreBigMSup[12,14]
+                                  -2                          17 
+   202 recOrdreBigMSup[12,15]
+                                   3                          17 
+   203 recOrdreBigMSup[12,16]
+                                   8                          17 
+   204 recOrdreBigMSup[13,2]
+                                  11                          17 
+   205 recOrdreBigMSup[13,3]
+                                  10                          17 
+   206 recOrdreBigMSup[13,4]
+                                  12                          17 
+   207 recOrdreBigMSup[13,5]
+                                   5                          17 
+   208 recOrdreBigMSup[13,6]
+                                   3                          17 
+   209 recOrdreBigMSup[13,7]
+                                   2                          17 
+   210 recOrdreBigMSup[13,8]
+                                  13                          17 
+   211 recOrdreBigMSup[13,9]
+                                   7                          17 
+   212 recOrdreBigMSup[13,10]
+                                   8                          17 
+   213 recOrdreBigMSup[13,11]
+                                   6                          17 
+   214 recOrdreBigMSup[13,12]
+                                  17                          17 
+   215 recOrdreBigMSup[13,14]
+                                  -1                          17 
+   216 recOrdreBigMSup[13,15]
+                                   4                          17 
+   217 recOrdreBigMSup[13,16]
+                                   9                          17 
+   218 recOrdreBigMSup[14,2]
+                                  12                          17 
+   219 recOrdreBigMSup[14,3]
+                                  11                          17 
+   220 recOrdreBigMSup[14,4]
+                                  13                          17 
+   221 recOrdreBigMSup[14,5]
+                                   6                          17 
+   222 recOrdreBigMSup[14,6]
+                                   4                          17 
+   223 recOrdreBigMSup[14,7]
+                                   3                          17 
+   224 recOrdreBigMSup[14,8]
+                                  14                          17 
+   225 recOrdreBigMSup[14,9]
+                                   8                          17 
+   226 recOrdreBigMSup[14,10]
+                                   9                          17 
+   227 recOrdreBigMSup[14,11]
+                                   7                          17 
+   228 recOrdreBigMSup[14,12]
+                                   2                          17 
+   229 recOrdreBigMSup[14,13]
+                                  17                          17 
+   230 recOrdreBigMSup[14,15]
+                                   5                          17 
+   231 recOrdreBigMSup[14,16]
+                                  10                          17 
+   232 recOrdreBigMSup[15,2]
+                                   7                          17 
+   233 recOrdreBigMSup[15,3]
+                                   6                          17 
+   234 recOrdreBigMSup[15,4]
+                                   8                          17 
+   235 recOrdreBigMSup[15,5]
+                                  17                          17 
+   236 recOrdreBigMSup[15,6]
+                                  -1                          17 
+   237 recOrdreBigMSup[15,7]
+                                  -2                          17 
+   238 recOrdreBigMSup[15,8]
+                                   9                          17 
+   239 recOrdreBigMSup[15,9]
+                                   3                          17 
+   240 recOrdreBigMSup[15,10]
+                                   4                          17 
+   241 recOrdreBigMSup[15,11]
+                                   2                          17 
+   242 recOrdreBigMSup[15,12]
+                                  -3                          17 
+   243 recOrdreBigMSup[15,13]
+                                  -4                          17 
+   244 recOrdreBigMSup[15,14]
+                                  -5                          17 
+   245 recOrdreBigMSup[15,16]
+                                   5                          17 
+   246 recOrdreBigMSup[16,2]
+                                   2                          17 
+   247 recOrdreBigMSup[16,3]
+                                  17                          17 
+   248 recOrdreBigMSup[16,4]
+                                   3                          17 
+   249 recOrdreBigMSup[16,5]
+                                  -4                          17 
+   250 recOrdreBigMSup[16,6]
+                                  -6                          17 
+   251 recOrdreBigMSup[16,7]
+                                  -7                          17 
+   252 recOrdreBigMSup[16,8]
+                                   4                          17 
+   253 recOrdreBigMSup[16,9]
+                                  -2                          17 
+   254 recOrdreBigMSup[16,10]
+                                  -1                          17 
+   255 recOrdreBigMSup[16,11]
+                                  -3                          17 
+   256 recOrdreBigMSup[16,12]
+                                  -8                          17 
+   257 recOrdreBigMSup[16,13]
+                                  -9                          17 
+   258 recOrdreBigMSup[16,14]
+                                 -10                          17 
+   259 recOrdreBigMSup[16,15]
+                                  -5                          17 
+   260 recOrdreBigMInf[1,2]
+                                  13           -15               
+   261 recOrdreBigMInf[1,3]
+                                  12           -15               
+   262 recOrdreBigMInf[1,4]
+                                  14           -15               
+   263 recOrdreBigMInf[1,5]
+                                   7           -15               
+   264 recOrdreBigMInf[1,6]
+                                   5           -15               
+   265 recOrdreBigMInf[1,7]
+                                   4           -15               
+   266 recOrdreBigMInf[1,8]
+                                  15           -15               
+   267 recOrdreBigMInf[1,9]
+                                   9           -15               
+   268 recOrdreBigMInf[1,10]
+                                  10           -15               
+   269 recOrdreBigMInf[1,11]
+                                   8           -15               
+   270 recOrdreBigMInf[1,12]
+                                   3           -15               
+   271 recOrdreBigMInf[1,13]
+                                   2           -15               
+   272 recOrdreBigMInf[1,14]
+                                 -15           -15               
+   273 recOrdreBigMInf[1,15]
+                                   6           -15               
+   274 recOrdreBigMInf[1,16]
+                                  11           -15               
+   275 recOrdreBigMInf[2,3]
+                                  -1           -15               
+   276 recOrdreBigMInf[2,4]
+                                 -15           -15               
+   277 recOrdreBigMInf[2,5]
+                                  -6           -15               
+   278 recOrdreBigMInf[2,6]
+                                  -8           -15               
+   279 recOrdreBigMInf[2,7]
+                                  -9           -15               
+   280 recOrdreBigMInf[2,8]
+                                   2           -15               
+   281 recOrdreBigMInf[2,9]
+                                  -4           -15               
+   282 recOrdreBigMInf[2,10]
+                                  -3           -15               
+   283 recOrdreBigMInf[2,11]
+                                  -5           -15               
+   284 recOrdreBigMInf[2,12]
+                                 -10           -15               
+   285 recOrdreBigMInf[2,13]
+                                 -11           -15               
+   286 recOrdreBigMInf[2,14]
+                                 -12           -15               
+   287 recOrdreBigMInf[2,15]
+                                  -7           -15               
+   288 recOrdreBigMInf[2,16]
+                                  -2           -15               
+   289 recOrdreBigMInf[3,2]
+                                 -15           -15               
+   290 recOrdreBigMInf[3,4]
+                                   2           -15               
+   291 recOrdreBigMInf[3,5]
+                                  -5           -15               
+   292 recOrdreBigMInf[3,6]
+                                  -7           -15               
+   293 recOrdreBigMInf[3,7]
+                                  -8           -15               
+   294 recOrdreBigMInf[3,8]
+                                   3           -15               
+   295 recOrdreBigMInf[3,9]
+                                  -3           -15               
+   296 recOrdreBigMInf[3,10]
+                                  -2           -15               
+   297 recOrdreBigMInf[3,11]
+                                  -4           -15               
+   298 recOrdreBigMInf[3,12]
+                                  -9           -15               
+   299 recOrdreBigMInf[3,13]
+                                 -10           -15               
+   300 recOrdreBigMInf[3,14]
+                                 -11           -15               
+   301 recOrdreBigMInf[3,15]
+                                  -6           -15               
+   302 recOrdreBigMInf[3,16]
+                                  -1           -15               
+   303 recOrdreBigMInf[4,2]
+                                  -1           -15               
+   304 recOrdreBigMInf[4,3]
+                                  -2           -15               
+   305 recOrdreBigMInf[4,5]
+                                  -7           -15               
+   306 recOrdreBigMInf[4,6]
+                                  -9           -15               
+   307 recOrdreBigMInf[4,7]
+                                 -10           -15               
+   308 recOrdreBigMInf[4,8]
+                                 -15           -15               
+   309 recOrdreBigMInf[4,9]
+                                  -5           -15               
+   310 recOrdreBigMInf[4,10]
+                                  -4           -15               
+   311 recOrdreBigMInf[4,11]
+                                  -6           -15               
+   312 recOrdreBigMInf[4,12]
+                                 -11           -15               
+   313 recOrdreBigMInf[4,13]
+                                 -12           -15               
+   314 recOrdreBigMInf[4,14]
+                                 -13           -15               
+   315 recOrdreBigMInf[4,15]
+                                  -8           -15               
+   316 recOrdreBigMInf[4,16]
+                                  -3           -15               
+   317 recOrdreBigMInf[5,2]
+                                   6           -15               
+   318 recOrdreBigMInf[5,3]
+                                   5           -15               
+   319 recOrdreBigMInf[5,4]
+                                   7           -15               
+   320 recOrdreBigMInf[5,6]
+                                  -2           -15               
+   321 recOrdreBigMInf[5,7]
+                                  -3           -15               
+   322 recOrdreBigMInf[5,8]
+                                   8           -15               
+   323 recOrdreBigMInf[5,9]
+                                   2           -15               
+   324 recOrdreBigMInf[5,10]
+                                   3           -15               
+   325 recOrdreBigMInf[5,11]
+                                 -15           -15               
+   326 recOrdreBigMInf[5,12]
+                                  -4           -15               
+   327 recOrdreBigMInf[5,13]
+                                  -5           -15               
+   328 recOrdreBigMInf[5,14]
+                                  -6           -15               
+   329 recOrdreBigMInf[5,15]
+                                  -1           -15               
+   330 recOrdreBigMInf[5,16]
+                                   4           -15               
+   331 recOrdreBigMInf[6,2]
+                                   8           -15               
+   332 recOrdreBigMInf[6,3]
+                                   7           -15               
+   333 recOrdreBigMInf[6,4]
+                                   9           -15               
+   334 recOrdreBigMInf[6,5]
+                                   2           -15               
+   335 recOrdreBigMInf[6,7]
+                                  -1           -15               
+   336 recOrdreBigMInf[6,8]
+                                  10           -15               
+   337 recOrdreBigMInf[6,9]
+                                   4           -15               
+   338 recOrdreBigMInf[6,10]
+                                   5           -15               
+   339 recOrdreBigMInf[6,11]
+                                   3           -15               
+   340 recOrdreBigMInf[6,12]
+                                  -2           -15               
+   341 recOrdreBigMInf[6,13]
+                                  -3           -15               
+   342 recOrdreBigMInf[6,14]
+                                  -4           -15               
+   343 recOrdreBigMInf[6,15]
+                                 -15           -15               
+   344 recOrdreBigMInf[6,16]
+                                   6           -15               
+   345 recOrdreBigMInf[7,2]
+                                   9           -15               
+   346 recOrdreBigMInf[7,3]
+                                   8           -15               
+   347 recOrdreBigMInf[7,4]
+                                  10           -15               
+   348 recOrdreBigMInf[7,5]
+                                   3           -15               
+   349 recOrdreBigMInf[7,6]
+                                 -15           -15               
+   350 recOrdreBigMInf[7,8]
+                                  11           -15               
+   351 recOrdreBigMInf[7,9]
+                                   5           -15               
+   352 recOrdreBigMInf[7,10]
+                                   6           -15               
+   353 recOrdreBigMInf[7,11]
+                                   4           -15               
+   354 recOrdreBigMInf[7,12]
+                                  -1           -15               
+   355 recOrdreBigMInf[7,13]
+                                  -2           -15               
+   356 recOrdreBigMInf[7,14]
+                                  -3           -15               
+   357 recOrdreBigMInf[7,15]
+                                   2           -15               
+   358 recOrdreBigMInf[7,16]
+                                   7           -15               
+   359 recOrdreBigMInf[8,2]
+                                  -2           -15               
+   360 recOrdreBigMInf[8,3]
+                                  -3           -15               
+   361 recOrdreBigMInf[8,4]
+                                  -1           -15               
+   362 recOrdreBigMInf[8,5]
+                                  -8           -15               
+   363 recOrdreBigMInf[8,6]
+                                 -10           -15               
+   364 recOrdreBigMInf[8,7]
+                                 -11           -15               
+   365 recOrdreBigMInf[8,9]
+                                  -6           -15               
+   366 recOrdreBigMInf[8,10]
+                                  -5           -15               
+   367 recOrdreBigMInf[8,11]
+                                  -7           -15               
+   368 recOrdreBigMInf[8,12]
+                                 -12           -15               
+   369 recOrdreBigMInf[8,13]
+                                 -13           -15               
+   370 recOrdreBigMInf[8,14]
+                                 -14           -15               
+   371 recOrdreBigMInf[8,15]
+                                  -9           -15               
+   372 recOrdreBigMInf[8,16]
+                                  -4           -15               
+   373 recOrdreBigMInf[9,2]
+                                   4           -15               
+   374 recOrdreBigMInf[9,3]
+                                   3           -15               
+   375 recOrdreBigMInf[9,4]
+                                   5           -15               
+   376 recOrdreBigMInf[9,5]
+                                  -2           -15               
+   377 recOrdreBigMInf[9,6]
+                                  -4           -15               
+   378 recOrdreBigMInf[9,7]
+                                  -5           -15               
+   379 recOrdreBigMInf[9,8]
+                                   6           -15               
+   380 recOrdreBigMInf[9,10]
+                                 -15           -15               
+   381 recOrdreBigMInf[9,11]
+                                  -1           -15               
+   382 recOrdreBigMInf[9,12]
+                                  -6           -15               
+   383 recOrdreBigMInf[9,13]
+                                  -7           -15               
+   384 recOrdreBigMInf[9,14]
+                                  -8           -15               
+   385 recOrdreBigMInf[9,15]
+                                  -3           -15               
+   386 recOrdreBigMInf[9,16]
+                                   2           -15               
+   387 recOrdreBigMInf[10,2]
+                                   3           -15               
+   388 recOrdreBigMInf[10,3]
+                                   2           -15               
+   389 recOrdreBigMInf[10,4]
+                                   4           -15               
+   390 recOrdreBigMInf[10,5]
+                                  -3           -15               
+   391 recOrdreBigMInf[10,6]
+                                  -5           -15               
+   392 recOrdreBigMInf[10,7]
+                                  -6           -15               
+   393 recOrdreBigMInf[10,8]
+                                   5           -15               
+   394 recOrdreBigMInf[10,9]
+                                  -1           -15               
+   395 recOrdreBigMInf[10,11]
+                                  -2           -15               
+   396 recOrdreBigMInf[10,12]
+                                  -7           -15               
+   397 recOrdreBigMInf[10,13]
+                                  -8           -15               
+   398 recOrdreBigMInf[10,14]
+                                  -9           -15               
+   399 recOrdreBigMInf[10,15]
+                                  -4           -15               
+   400 recOrdreBigMInf[10,16]
+                                 -15           -15               
+   401 recOrdreBigMInf[11,2]
+                                   5           -15               
+   402 recOrdreBigMInf[11,3]
+                                   4           -15               
+   403 recOrdreBigMInf[11,4]
+                                   6           -15               
+   404 recOrdreBigMInf[11,5]
+                                  -1           -15               
+   405 recOrdreBigMInf[11,6]
+                                  -3           -15               
+   406 recOrdreBigMInf[11,7]
+                                  -4           -15               
+   407 recOrdreBigMInf[11,8]
+                                   7           -15               
+   408 recOrdreBigMInf[11,9]
+                                 -15           -15               
+   409 recOrdreBigMInf[11,10]
+                                   2           -15               
+   410 recOrdreBigMInf[11,12]
+                                  -5           -15               
+   411 recOrdreBigMInf[11,13]
+                                  -6           -15               
+   412 recOrdreBigMInf[11,14]
+                                  -7           -15               
+   413 recOrdreBigMInf[11,15]
+                                  -2           -15               
+   414 recOrdreBigMInf[11,16]
+                                   3           -15               
+   415 recOrdreBigMInf[12,2]
+                                  10           -15               
+   416 recOrdreBigMInf[12,3]
+                                   9           -15               
+   417 recOrdreBigMInf[12,4]
+                                  11           -15               
+   418 recOrdreBigMInf[12,5]
+                                   4           -15               
+   419 recOrdreBigMInf[12,6]
+                                   2           -15               
+   420 recOrdreBigMInf[12,7]
+                                 -15           -15               
+   421 recOrdreBigMInf[12,8]
+                                  12           -15               
+   422 recOrdreBigMInf[12,9]
+                                   6           -15               
+   423 recOrdreBigMInf[12,10]
+                                   7           -15               
+   424 recOrdreBigMInf[12,11]
+                                   5           -15               
+   425 recOrdreBigMInf[12,13]
+                                  -1           -15               
+   426 recOrdreBigMInf[12,14]
+                                  -2           -15               
+   427 recOrdreBigMInf[12,15]
+                                   3           -15               
+   428 recOrdreBigMInf[12,16]
+                                   8           -15               
+   429 recOrdreBigMInf[13,2]
+                                  11           -15               
+   430 recOrdreBigMInf[13,3]
+                                  10           -15               
+   431 recOrdreBigMInf[13,4]
+                                  12           -15               
+   432 recOrdreBigMInf[13,5]
+                                   5           -15               
+   433 recOrdreBigMInf[13,6]
+                                   3           -15               
+   434 recOrdreBigMInf[13,7]
+                                   2           -15               
+   435 recOrdreBigMInf[13,8]
+                                  13           -15               
+   436 recOrdreBigMInf[13,9]
+                                   7           -15               
+   437 recOrdreBigMInf[13,10]
+                                   8           -15               
+   438 recOrdreBigMInf[13,11]
+                                   6           -15               
+   439 recOrdreBigMInf[13,12]
+                                 -15           -15               
+   440 recOrdreBigMInf[13,14]
+                                  -1           -15               
+   441 recOrdreBigMInf[13,15]
+                                   4           -15               
+   442 recOrdreBigMInf[13,16]
+                                   9           -15               
+   443 recOrdreBigMInf[14,2]
+                                  12           -15               
+   444 recOrdreBigMInf[14,3]
+                                  11           -15               
+   445 recOrdreBigMInf[14,4]
+                                  13           -15               
+   446 recOrdreBigMInf[14,5]
+                                   6           -15               
+   447 recOrdreBigMInf[14,6]
+                                   4           -15               
+   448 recOrdreBigMInf[14,7]
+                                   3           -15               
+   449 recOrdreBigMInf[14,8]
+                                  14           -15               
+   450 recOrdreBigMInf[14,9]
+                                   8           -15               
+   451 recOrdreBigMInf[14,10]
+                                   9           -15               
+   452 recOrdreBigMInf[14,11]
+                                   7           -15               
+   453 recOrdreBigMInf[14,12]
+                                   2           -15               
+   454 recOrdreBigMInf[14,13]
+                                 -15           -15               
+   455 recOrdreBigMInf[14,15]
+                                   5           -15               
+   456 recOrdreBigMInf[14,16]
+                                  10           -15               
+   457 recOrdreBigMInf[15,2]
+                                   7           -15               
+   458 recOrdreBigMInf[15,3]
+                                   6           -15               
+   459 recOrdreBigMInf[15,4]
+                                   8           -15               
+   460 recOrdreBigMInf[15,5]
+                                 -15           -15               
+   461 recOrdreBigMInf[15,6]
+                                  -1           -15               
+   462 recOrdreBigMInf[15,7]
+                                  -2           -15               
+   463 recOrdreBigMInf[15,8]
+                                   9           -15               
+   464 recOrdreBigMInf[15,9]
+                                   3           -15               
+   465 recOrdreBigMInf[15,10]
+                                   4           -15               
+   466 recOrdreBigMInf[15,11]
+                                   2           -15               
+   467 recOrdreBigMInf[15,12]
+                                  -3           -15               
+   468 recOrdreBigMInf[15,13]
+                                  -4           -15               
+   469 recOrdreBigMInf[15,14]
+                                  -5           -15               
+   470 recOrdreBigMInf[15,16]
+                                   5           -15               
+   471 recOrdreBigMInf[16,2]
+                                   2           -15               
+   472 recOrdreBigMInf[16,3]
+                                 -15           -15               
+   473 recOrdreBigMInf[16,4]
+                                   3           -15               
+   474 recOrdreBigMInf[16,5]
+                                  -4           -15               
+   475 recOrdreBigMInf[16,6]
+                                  -6           -15               
+   476 recOrdreBigMInf[16,7]
+                                  -7           -15               
+   477 recOrdreBigMInf[16,8]
+                                   4           -15               
+   478 recOrdreBigMInf[16,9]
+                                  -2           -15               
+   479 recOrdreBigMInf[16,10]
+                                  -1           -15               
+   480 recOrdreBigMInf[16,11]
+                                  -3           -15               
+   481 recOrdreBigMInf[16,12]
+                                  -8           -15               
+   482 recOrdreBigMInf[16,13]
+                                  -9           -15               
+   483 recOrdreBigMInf[16,14]
+                                 -10           -15               
+   484 recOrdreBigMInf[16,15]
+                                  -5           -15               
+   485 distancesParcourusTot
+                                6859                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 departArrivee[1,1]
+                    *              0             0             1 
+     2 departArrivee[1,2]
+                    *              0             0             1 
+     3 departArrivee[1,3]
+                    *              0             0             1 
+     4 departArrivee[1,4]
+                    *              0             0             1 
+     5 departArrivee[1,5]
+                    *              0             0             1 
+     6 departArrivee[1,6]
+                    *              0             0             1 
+     7 departArrivee[1,7]
+                    *              0             0             1 
+     8 departArrivee[1,8]
+                    *              0             0             1 
+     9 departArrivee[1,9]
+                    *              0             0             1 
+    10 departArrivee[1,10]
+                    *              0             0             1 
+    11 departArrivee[1,11]
+                    *              0             0             1 
+    12 departArrivee[1,12]
+                    *              0             0             1 
+    13 departArrivee[1,13]
+                    *              0             0             1 
+    14 departArrivee[1,14]
+                    *              1             0             1 
+    15 departArrivee[1,15]
+                    *              0             0             1 
+    16 departArrivee[1,16]
+                    *              0             0             1 
+    17 departArrivee[2,1]
+                    *              0             0             1 
+    18 departArrivee[2,2]
+                    *              0             0             1 
+    19 departArrivee[2,3]
+                    *              0             0             1 
+    20 departArrivee[2,4]
+                    *              1             0             1 
+    21 departArrivee[2,5]
+                    *              0             0             1 
+    22 departArrivee[2,6]
+                    *              0             0             1 
+    23 departArrivee[2,7]
+                    *              0             0             1 
+    24 departArrivee[2,8]
+                    *              0             0             1 
+    25 departArrivee[2,9]
+                    *              0             0             1 
+    26 departArrivee[2,10]
+                    *              0             0             1 
+    27 departArrivee[2,11]
+                    *              0             0             1 
+    28 departArrivee[2,12]
+                    *              0             0             1 
+    29 departArrivee[2,13]
+                    *              0             0             1 
+    30 departArrivee[2,14]
+                    *              0             0             1 
+    31 departArrivee[2,15]
+                    *              0             0             1 
+    32 departArrivee[2,16]
+                    *              0             0             1 
+    33 departArrivee[3,1]
+                    *              0             0             1 
+    34 departArrivee[3,2]
+                    *              1             0             1 
+    35 departArrivee[3,3]
+                    *              0             0             1 
+    36 departArrivee[3,4]
+                    *              0             0             1 
+    37 departArrivee[3,5]
+                    *              0             0             1 
+    38 departArrivee[3,6]
+                    *              0             0             1 
+    39 departArrivee[3,7]
+                    *              0             0             1 
+    40 departArrivee[3,8]
+                    *              0             0             1 
+    41 departArrivee[3,9]
+                    *              0             0             1 
+    42 departArrivee[3,10]
+                    *              0             0             1 
+    43 departArrivee[3,11]
+                    *              0             0             1 
+    44 departArrivee[3,12]
+                    *              0             0             1 
+    45 departArrivee[3,13]
+                    *              0             0             1 
+    46 departArrivee[3,14]
+                    *              0             0             1 
+    47 departArrivee[3,15]
+                    *              0             0             1 
+    48 departArrivee[3,16]
+                    *              0             0             1 
+    49 departArrivee[4,1]
+                    *              0             0             1 
+    50 departArrivee[4,2]
+                    *              0             0             1 
+    51 departArrivee[4,3]
+                    *              0             0             1 
+    52 departArrivee[4,4]
+                    *              0             0             1 
+    53 departArrivee[4,5]
+                    *              0             0             1 
+    54 departArrivee[4,6]
+                    *              0             0             1 
+    55 departArrivee[4,7]
+                    *              0             0             1 
+    56 departArrivee[4,8]
+                    *              1             0             1 
+    57 departArrivee[4,9]
+                    *              0             0             1 
+    58 departArrivee[4,10]
+                    *              0             0             1 
+    59 departArrivee[4,11]
+                    *              0             0             1 
+    60 departArrivee[4,12]
+                    *              0             0             1 
+    61 departArrivee[4,13]
+                    *              0             0             1 
+    62 departArrivee[4,14]
+                    *              0             0             1 
+    63 departArrivee[4,15]
+                    *              0             0             1 
+    64 departArrivee[4,16]
+                    *              0             0             1 
+    65 departArrivee[5,1]
+                    *              0             0             1 
+    66 departArrivee[5,2]
+                    *              0             0             1 
+    67 departArrivee[5,3]
+                    *              0             0             1 
+    68 departArrivee[5,4]
+                    *              0             0             1 
+    69 departArrivee[5,5]
+                    *              0             0             1 
+    70 departArrivee[5,6]
+                    *              0             0             1 
+    71 departArrivee[5,7]
+                    *              0             0             1 
+    72 departArrivee[5,8]
+                    *              0             0             1 
+    73 departArrivee[5,9]
+                    *              0             0             1 
+    74 departArrivee[5,10]
+                    *              0             0             1 
+    75 departArrivee[5,11]
+                    *              1             0             1 
+    76 departArrivee[5,12]
+                    *              0             0             1 
+    77 departArrivee[5,13]
+                    *              0             0             1 
+    78 departArrivee[5,14]
+                    *              0             0             1 
+    79 departArrivee[5,15]
+                    *              0             0             1 
+    80 departArrivee[5,16]
+                    *              0             0             1 
+    81 departArrivee[6,1]
+                    *              0             0             1 
+    82 departArrivee[6,2]
+                    *              0             0             1 
+    83 departArrivee[6,3]
+                    *              0             0             1 
+    84 departArrivee[6,4]
+                    *              0             0             1 
+    85 departArrivee[6,5]
+                    *              0             0             1 
+    86 departArrivee[6,6]
+                    *              0             0             1 
+    87 departArrivee[6,7]
+                    *              0             0             1 
+    88 departArrivee[6,8]
+                    *              0             0             1 
+    89 departArrivee[6,9]
+                    *              0             0             1 
+    90 departArrivee[6,10]
+                    *              0             0             1 
+    91 departArrivee[6,11]
+                    *              0             0             1 
+    92 departArrivee[6,12]
+                    *              0             0             1 
+    93 departArrivee[6,13]
+                    *              0             0             1 
+    94 departArrivee[6,14]
+                    *              0             0             1 
+    95 departArrivee[6,15]
+                    *              1             0             1 
+    96 departArrivee[6,16]
+                    *              0             0             1 
+    97 departArrivee[7,1]
+                    *              0             0             1 
+    98 departArrivee[7,2]
+                    *              0             0             1 
+    99 departArrivee[7,3]
+                    *              0             0             1 
+   100 departArrivee[7,4]
+                    *              0             0             1 
+   101 departArrivee[7,5]
+                    *              0             0             1 
+   102 departArrivee[7,6]
+                    *              1             0             1 
+   103 departArrivee[7,7]
+                    *              0             0             1 
+   104 departArrivee[7,8]
+                    *              0             0             1 
+   105 departArrivee[7,9]
+                    *              0             0             1 
+   106 departArrivee[7,10]
+                    *              0             0             1 
+   107 departArrivee[7,11]
+                    *              0             0             1 
+   108 departArrivee[7,12]
+                    *              0             0             1 
+   109 departArrivee[7,13]
+                    *              0             0             1 
+   110 departArrivee[7,14]
+                    *              0             0             1 
+   111 departArrivee[7,15]
+                    *              0             0             1 
+   112 departArrivee[7,16]
+                    *              0             0             1 
+   113 departArrivee[8,1]
+                    *              1             0             1 
+   114 departArrivee[8,2]
+                    *              0             0             1 
+   115 departArrivee[8,3]
+                    *              0             0             1 
+   116 departArrivee[8,4]
+                    *              0             0             1 
+   117 departArrivee[8,5]
+                    *              0             0             1 
+   118 departArrivee[8,6]
+                    *              0             0             1 
+   119 departArrivee[8,7]
+                    *              0             0             1 
+   120 departArrivee[8,8]
+                    *              0             0             1 
+   121 departArrivee[8,9]
+                    *              0             0             1 
+   122 departArrivee[8,10]
+                    *              0             0             1 
+   123 departArrivee[8,11]
+                    *              0             0             1 
+   124 departArrivee[8,12]
+                    *              0             0             1 
+   125 departArrivee[8,13]
+                    *              0             0             1 
+   126 departArrivee[8,14]
+                    *              0             0             1 
+   127 departArrivee[8,15]
+                    *              0             0             1 
+   128 departArrivee[8,16]
+                    *              0             0             1 
+   129 departArrivee[9,1]
+                    *              0             0             1 
+   130 departArrivee[9,2]
+                    *              0             0             1 
+   131 departArrivee[9,3]
+                    *              0             0             1 
+   132 departArrivee[9,4]
+                    *              0             0             1 
+   133 departArrivee[9,5]
+                    *              0             0             1 
+   134 departArrivee[9,6]
+                    *              0             0             1 
+   135 departArrivee[9,7]
+                    *              0             0             1 
+   136 departArrivee[9,8]
+                    *              0             0             1 
+   137 departArrivee[9,9]
+                    *              0             0             1 
+   138 departArrivee[9,10]
+                    *              1             0             1 
+   139 departArrivee[9,11]
+                    *              0             0             1 
+   140 departArrivee[9,12]
+                    *              0             0             1 
+   141 departArrivee[9,13]
+                    *              0             0             1 
+   142 departArrivee[9,14]
+                    *              0             0             1 
+   143 departArrivee[9,15]
+                    *              0             0             1 
+   144 departArrivee[9,16]
+                    *              0             0             1 
+   145 departArrivee[10,1]
+                    *              0             0             1 
+   146 departArrivee[10,2]
+                    *              0             0             1 
+   147 departArrivee[10,3]
+                    *              0             0             1 
+   148 departArrivee[10,4]
+                    *              0             0             1 
+   149 departArrivee[10,5]
+                    *              0             0             1 
+   150 departArrivee[10,6]
+                    *              0             0             1 
+   151 departArrivee[10,7]
+                    *              0             0             1 
+   152 departArrivee[10,8]
+                    *              0             0             1 
+   153 departArrivee[10,9]
+                    *              0             0             1 
+   154 departArrivee[10,10]
+                    *              0             0             1 
+   155 departArrivee[10,11]
+                    *              0             0             1 
+   156 departArrivee[10,12]
+                    *              0             0             1 
+   157 departArrivee[10,13]
+                    *              0             0             1 
+   158 departArrivee[10,14]
+                    *              0             0             1 
+   159 departArrivee[10,15]
+                    *              0             0             1 
+   160 departArrivee[10,16]
+                    *              1             0             1 
+   161 departArrivee[11,1]
+                    *              0             0             1 
+   162 departArrivee[11,2]
+                    *              0             0             1 
+   163 departArrivee[11,3]
+                    *              0             0             1 
+   164 departArrivee[11,4]
+                    *              0             0             1 
+   165 departArrivee[11,5]
+                    *              0             0             1 
+   166 departArrivee[11,6]
+                    *              0             0             1 
+   167 departArrivee[11,7]
+                    *              0             0             1 
+   168 departArrivee[11,8]
+                    *              0             0             1 
+   169 departArrivee[11,9]
+                    *              1             0             1 
+   170 departArrivee[11,10]
+                    *              0             0             1 
+   171 departArrivee[11,11]
+                    *              0             0             1 
+   172 departArrivee[11,12]
+                    *              0             0             1 
+   173 departArrivee[11,13]
+                    *              0             0             1 
+   174 departArrivee[11,14]
+                    *              0             0             1 
+   175 departArrivee[11,15]
+                    *              0             0             1 
+   176 departArrivee[11,16]
+                    *              0             0             1 
+   177 departArrivee[12,1]
+                    *              0             0             1 
+   178 departArrivee[12,2]
+                    *              0             0             1 
+   179 departArrivee[12,3]
+                    *              0             0             1 
+   180 departArrivee[12,4]
+                    *              0             0             1 
+   181 departArrivee[12,5]
+                    *              0             0             1 
+   182 departArrivee[12,6]
+                    *              0             0             1 
+   183 departArrivee[12,7]
+                    *              1             0             1 
+   184 departArrivee[12,8]
+                    *              0             0             1 
+   185 departArrivee[12,9]
+                    *              0             0             1 
+   186 departArrivee[12,10]
+                    *              0             0             1 
+   187 departArrivee[12,11]
+                    *              0             0             1 
+   188 departArrivee[12,12]
+                    *              0             0             1 
+   189 departArrivee[12,13]
+                    *              0             0             1 
+   190 departArrivee[12,14]
+                    *              0             0             1 
+   191 departArrivee[12,15]
+                    *              0             0             1 
+   192 departArrivee[12,16]
+                    *              0             0             1 
+   193 departArrivee[13,1]
+                    *              0             0             1 
+   194 departArrivee[13,2]
+                    *              0             0             1 
+   195 departArrivee[13,3]
+                    *              0             0             1 
+   196 departArrivee[13,4]
+                    *              0             0             1 
+   197 departArrivee[13,5]
+                    *              0             0             1 
+   198 departArrivee[13,6]
+                    *              0             0             1 
+   199 departArrivee[13,7]
+                    *              0             0             1 
+   200 departArrivee[13,8]
+                    *              0             0             1 
+   201 departArrivee[13,9]
+                    *              0             0             1 
+   202 departArrivee[13,10]
+                    *              0             0             1 
+   203 departArrivee[13,11]
+                    *              0             0             1 
+   204 departArrivee[13,12]
+                    *              1             0             1 
+   205 departArrivee[13,13]
+                    *              0             0             1 
+   206 departArrivee[13,14]
+                    *              0             0             1 
+   207 departArrivee[13,15]
+                    *              0             0             1 
+   208 departArrivee[13,16]
+                    *              0             0             1 
+   209 departArrivee[14,1]
+                    *              0             0             1 
+   210 departArrivee[14,2]
+                    *              0             0             1 
+   211 departArrivee[14,3]
+                    *              0             0             1 
+   212 departArrivee[14,4]
+                    *              0             0             1 
+   213 departArrivee[14,5]
+                    *              0             0             1 
+   214 departArrivee[14,6]
+                    *              0             0             1 
+   215 departArrivee[14,7]
+                    *              0             0             1 
+   216 departArrivee[14,8]
+                    *              0             0             1 
+   217 departArrivee[14,9]
+                    *              0             0             1 
+   218 departArrivee[14,10]
+                    *              0             0             1 
+   219 departArrivee[14,11]
+                    *              0             0             1 
+   220 departArrivee[14,12]
+                    *              0             0             1 
+   221 departArrivee[14,13]
+                    *              1             0             1 
+   222 departArrivee[14,14]
+                    *              0             0             1 
+   223 departArrivee[14,15]
+                    *              0             0             1 
+   224 departArrivee[14,16]
+                    *              0             0             1 
+   225 departArrivee[15,1]
+                    *              0             0             1 
+   226 departArrivee[15,2]
+                    *              0             0             1 
+   227 departArrivee[15,3]
+                    *              0             0             1 
+   228 departArrivee[15,4]
+                    *              0             0             1 
+   229 departArrivee[15,5]
+                    *              1             0             1 
+   230 departArrivee[15,6]
+                    *              0             0             1 
+   231 departArrivee[15,7]
+                    *              0             0             1 
+   232 departArrivee[15,8]
+                    *              0             0             1 
+   233 departArrivee[15,9]
+                    *              0             0             1 
+   234 departArrivee[15,10]
+                    *              0             0             1 
+   235 departArrivee[15,11]
+                    *              0             0             1 
+   236 departArrivee[15,12]
+                    *              0             0             1 
+   237 departArrivee[15,13]
+                    *              0             0             1 
+   238 departArrivee[15,14]
+                    *              0             0             1 
+   239 departArrivee[15,15]
+                    *              0             0             1 
+   240 departArrivee[15,16]
+                    *              0             0             1 
+   241 departArrivee[16,1]
+                    *              0             0             1 
+   242 departArrivee[16,2]
+                    *              0             0             1 
+   243 departArrivee[16,3]
+                    *              1             0             1 
+   244 departArrivee[16,4]
+                    *              0             0             1 
+   245 departArrivee[16,5]
+                    *              0             0             1 
+   246 departArrivee[16,6]
+                    *              0             0             1 
+   247 departArrivee[16,7]
+                    *              0             0             1 
+   248 departArrivee[16,8]
+                    *              0             0             1 
+   249 departArrivee[16,9]
+                    *              0             0             1 
+   250 departArrivee[16,10]
+                    *              0             0             1 
+   251 departArrivee[16,11]
+                    *              0             0             1 
+   252 departArrivee[16,12]
+                    *              0             0             1 
+   253 departArrivee[16,13]
+                    *              0             0             1 
+   254 departArrivee[16,14]
+                    *              0             0             1 
+   255 departArrivee[16,15]
+                    *              0             0             1 
+   256 departArrivee[16,16]
+                    *              0             0             1 
+   257 ordrePassage[1]
+                    *              1             0               
+   258 ordrePassage[2]
+                    *             14             0               
+   259 ordrePassage[3]
+                    *             13             0               
+   260 ordrePassage[4]
+                    *             15             0               
+   261 ordrePassage[5]
+                    *              8             0               
+   262 ordrePassage[6]
+                    *              6             0               
+   263 ordrePassage[7]
+                    *              5             0               
+   264 ordrePassage[8]
+                    *             16             0               
+   265 ordrePassage[9]
+                    *             10             0               
+   266 ordrePassage[10]
+                    *             11             0               
+   267 ordrePassage[11]
+                    *              9             0               
+   268 ordrePassage[12]
+                    *              4             0               
+   269 ordrePassage[13]
+                    *              3             0               
+   270 ordrePassage[14]
+                    *              2             0               
+   271 ordrePassage[15]
+                    *              7             0               
+   272 ordrePassage[16]
+                    *             12             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

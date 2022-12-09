@@ -1,0 +1,265 @@
+Problem:    gestionPersonnelle
+Rows:       21
+Columns:    100 (100 integer, 100 binary)
+Non-zeros:  300
+Status:     INTEGER OPTIMAL
+Objective:  CoutTot = 430 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 RespectAttributionPersonne[Michel]
+                                   1             1             = 
+     2 RespectAttributionPersonne[Patrice]
+                                   1             1             = 
+     3 RespectAttributionPersonne[Benjamin]
+                                   1             1             = 
+     4 RespectAttributionPersonne[Lucas]
+                                   1             1             = 
+     5 RespectAttributionPersonne[Matheo]
+                                   1             1             = 
+     6 RespectAttributionPersonne[Nicolas]
+                                   1             1             = 
+     7 RespectAttributionPersonne[Jean]
+                                   1             1             = 
+     8 RespectAttributionPersonne[Hugo]
+                                   1             1             = 
+     9 RespectAttributionPersonne[Jacquie]
+                                   1             1             = 
+    10 RespectAttributionPersonne[Marc]
+                                   1             1             = 
+    11 RespectAttributionPostes[AssemblagePieces]
+                                   1             1             = 
+    12 RespectAttributionPostes[Decoupe]
+                                   1             1             = 
+    13 RespectAttributionPostes[Extrusion]
+                                   1             1             = 
+    14 RespectAttributionPostes[Moulage]
+                                   1             1             = 
+    15 RespectAttributionPostes[Decape]
+                                   1             1             = 
+    16 RespectAttributionPostes[Bavurage]
+                                   1             1             = 
+    17 RespectAttributionPostes[Soudure]
+                                   1             1             = 
+    18 RespectAttributionPostes[Approvisionnement]
+                                   1             1             = 
+    19 RespectAttributionPostes[ControleVisuel]
+                                   1             1             = 
+    20 RespectAttributionPostes[ControleMesure]
+                                   1             1             = 
+    21 CoutTot                   430                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 affectation[Michel,AssemblagePieces]
+                    *              0             0             1 
+     2 affectation[Michel,Decoupe]
+                    *              1             0             1 
+     3 affectation[Michel,Extrusion]
+                    *              0             0             1 
+     4 affectation[Michel,Moulage]
+                    *              0             0             1 
+     5 affectation[Michel,Decape]
+                    *              0             0             1 
+     6 affectation[Michel,Bavurage]
+                    *              0             0             1 
+     7 affectation[Michel,Soudure]
+                    *              0             0             1 
+     8 affectation[Michel,Approvisionnement]
+                    *              0             0             1 
+     9 affectation[Michel,ControleVisuel]
+                    *              0             0             1 
+    10 affectation[Michel,ControleMesure]
+                    *              0             0             1 
+    11 affectation[Patrice,AssemblagePieces]
+                    *              0             0             1 
+    12 affectation[Patrice,Decoupe]
+                    *              0             0             1 
+    13 affectation[Patrice,Extrusion]
+                    *              0             0             1 
+    14 affectation[Patrice,Moulage]
+                    *              0             0             1 
+    15 affectation[Patrice,Decape]
+                    *              0             0             1 
+    16 affectation[Patrice,Bavurage]
+                    *              0             0             1 
+    17 affectation[Patrice,Soudure]
+                    *              1             0             1 
+    18 affectation[Patrice,Approvisionnement]
+                    *              0             0             1 
+    19 affectation[Patrice,ControleVisuel]
+                    *              0             0             1 
+    20 affectation[Patrice,ControleMesure]
+                    *              0             0             1 
+    21 affectation[Benjamin,AssemblagePieces]
+                    *              0             0             1 
+    22 affectation[Benjamin,Decoupe]
+                    *              0             0             1 
+    23 affectation[Benjamin,Extrusion]
+                    *              0             0             1 
+    24 affectation[Benjamin,Moulage]
+                    *              0             0             1 
+    25 affectation[Benjamin,Decape]
+                    *              0             0             1 
+    26 affectation[Benjamin,Bavurage]
+                    *              0             0             1 
+    27 affectation[Benjamin,Soudure]
+                    *              0             0             1 
+    28 affectation[Benjamin,Approvisionnement]
+                    *              1             0             1 
+    29 affectation[Benjamin,ControleVisuel]
+                    *              0             0             1 
+    30 affectation[Benjamin,ControleMesure]
+                    *              0             0             1 
+    31 affectation[Lucas,AssemblagePieces]
+                    *              1             0             1 
+    32 affectation[Lucas,Decoupe]
+                    *              0             0             1 
+    33 affectation[Lucas,Extrusion]
+                    *              0             0             1 
+    34 affectation[Lucas,Moulage]
+                    *              0             0             1 
+    35 affectation[Lucas,Decape]
+                    *              0             0             1 
+    36 affectation[Lucas,Bavurage]
+                    *              0             0             1 
+    37 affectation[Lucas,Soudure]
+                    *              0             0             1 
+    38 affectation[Lucas,Approvisionnement]
+                    *              0             0             1 
+    39 affectation[Lucas,ControleVisuel]
+                    *              0             0             1 
+    40 affectation[Lucas,ControleMesure]
+                    *              0             0             1 
+    41 affectation[Matheo,AssemblagePieces]
+                    *              0             0             1 
+    42 affectation[Matheo,Decoupe]
+                    *              0             0             1 
+    43 affectation[Matheo,Extrusion]
+                    *              1             0             1 
+    44 affectation[Matheo,Moulage]
+                    *              0             0             1 
+    45 affectation[Matheo,Decape]
+                    *              0             0             1 
+    46 affectation[Matheo,Bavurage]
+                    *              0             0             1 
+    47 affectation[Matheo,Soudure]
+                    *              0             0             1 
+    48 affectation[Matheo,Approvisionnement]
+                    *              0             0             1 
+    49 affectation[Matheo,ControleVisuel]
+                    *              0             0             1 
+    50 affectation[Matheo,ControleMesure]
+                    *              0             0             1 
+    51 affectation[Nicolas,AssemblagePieces]
+                    *              0             0             1 
+    52 affectation[Nicolas,Decoupe]
+                    *              0             0             1 
+    53 affectation[Nicolas,Extrusion]
+                    *              0             0             1 
+    54 affectation[Nicolas,Moulage]
+                    *              0             0             1 
+    55 affectation[Nicolas,Decape]
+                    *              0             0             1 
+    56 affectation[Nicolas,Bavurage]
+                    *              0             0             1 
+    57 affectation[Nicolas,Soudure]
+                    *              0             0             1 
+    58 affectation[Nicolas,Approvisionnement]
+                    *              0             0             1 
+    59 affectation[Nicolas,ControleVisuel]
+                    *              0             0             1 
+    60 affectation[Nicolas,ControleMesure]
+                    *              1             0             1 
+    61 affectation[Jean,AssemblagePieces]
+                    *              0             0             1 
+    62 affectation[Jean,Decoupe]
+                    *              0             0             1 
+    63 affectation[Jean,Extrusion]
+                    *              0             0             1 
+    64 affectation[Jean,Moulage]
+                    *              0             0             1 
+    65 affectation[Jean,Decape]
+                    *              1             0             1 
+    66 affectation[Jean,Bavurage]
+                    *              0             0             1 
+    67 affectation[Jean,Soudure]
+                    *              0             0             1 
+    68 affectation[Jean,Approvisionnement]
+                    *              0             0             1 
+    69 affectation[Jean,ControleVisuel]
+                    *              0             0             1 
+    70 affectation[Jean,ControleMesure]
+                    *              0             0             1 
+    71 affectation[Hugo,AssemblagePieces]
+                    *              0             0             1 
+    72 affectation[Hugo,Decoupe]
+                    *              0             0             1 
+    73 affectation[Hugo,Extrusion]
+                    *              0             0             1 
+    74 affectation[Hugo,Moulage]
+                    *              0             0             1 
+    75 affectation[Hugo,Decape]
+                    *              0             0             1 
+    76 affectation[Hugo,Bavurage]
+                    *              0             0             1 
+    77 affectation[Hugo,Soudure]
+                    *              0             0             1 
+    78 affectation[Hugo,Approvisionnement]
+                    *              0             0             1 
+    79 affectation[Hugo,ControleVisuel]
+                    *              1             0             1 
+    80 affectation[Hugo,ControleMesure]
+                    *              0             0             1 
+    81 affectation[Jacquie,AssemblagePieces]
+                    *              0             0             1 
+    82 affectation[Jacquie,Decoupe]
+                    *              0             0             1 
+    83 affectation[Jacquie,Extrusion]
+                    *              0             0             1 
+    84 affectation[Jacquie,Moulage]
+                    *              1             0             1 
+    85 affectation[Jacquie,Decape]
+                    *              0             0             1 
+    86 affectation[Jacquie,Bavurage]
+                    *              0             0             1 
+    87 affectation[Jacquie,Soudure]
+                    *              0             0             1 
+    88 affectation[Jacquie,Approvisionnement]
+                    *              0             0             1 
+    89 affectation[Jacquie,ControleVisuel]
+                    *              0             0             1 
+    90 affectation[Jacquie,ControleMesure]
+                    *              0             0             1 
+    91 affectation[Marc,AssemblagePieces]
+                    *              0             0             1 
+    92 affectation[Marc,Decoupe]
+                    *              0             0             1 
+    93 affectation[Marc,Extrusion]
+                    *              0             0             1 
+    94 affectation[Marc,Moulage]
+                    *              0             0             1 
+    95 affectation[Marc,Decape]
+                    *              0             0             1 
+    96 affectation[Marc,Bavurage]
+                    *              1             0             1 
+    97 affectation[Marc,Soudure]
+                    *              0             0             1 
+    98 affectation[Marc,Approvisionnement]
+                    *              0             0             1 
+    99 affectation[Marc,ControleVisuel]
+                    *              0             0             1 
+   100 affectation[Marc,ControleMesure]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

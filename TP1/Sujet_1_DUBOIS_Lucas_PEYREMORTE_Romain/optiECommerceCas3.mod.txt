@@ -1,0 +1,50 @@
+##### Model #####
+
+##### Sets #####
+
+set PRODUITS;
+
+set MAGASINS;
+
+set DEMANDES;
+
+##### Variables #####
+
+var quantite{i in PRODUITS, j in MAGASINS, k in DEMANDES}, integer, >=0;
+
+var colisOuPas{j in MAGASINS, k in DEMANDES}, binary;
+
+##### Constants: Data to load #####
+
+param demande{i in PRODUITS, k in DEMANDES};
+
+param stock{i in PRODUITS, j in MAGASINS};
+
+param coutUnitaire{i in PRODUITS, j in MAGASINS};
+
+param coutFixe{j in MAGASINS, k in DEMANDES};
+
+param coutVariable{j in MAGASINS, k in DEMANDES};
+
+##### Constraints #####
+s.t. 
+ RespectPasColis{j in MAGASINS, k in DEMANDES}:
+ colisOuPas[j,k] - sum{i in PRODUITS} quantite[i,j,k] <= 0;
+
+ RespectColis{j in MAGASINS, k in DEMANDES}:
+ (sum{i in PRODUITS} quantite[i,j,k]) - colisOuPas[j,k] * (sum{i in PRODUITS, l in MAGASINS} stock[i,l]) <= 0;
+
+##### Objective #####
+
+minimize CoutTot: 
+(sum{j in MAGASINS, k in DEMANDES} (sum{i in PRODUITS} quantite[i,j,k])*coutVariable[j,k]) +
+(sum{j in MAGASINS, k in DEMANDES} colisOuPas[j,k]*coutFixe[j,k]);
+end;
+/*
+RespectCommande{i in PRODUITS, k in DEMANDES}:
+ sum{j in MAGASINS} quantite[i,j,k] = demande[i,k];
+
+ RespectStocks{i in PRODUITS, j in MAGASINS}: 
+ sum{k in DEMANDES} quantite[i,j,k] <= stock[i,j];
+(sum{i in PRODUITS, j in MAGASINS} (sum{k in DEMANDES} quantite[i,j,k])*coutUnitaire[i,j]) +
+*/

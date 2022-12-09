@@ -1,0 +1,48 @@
+##### Model #####
+
+##### Sets #####
+
+set MAGASIN;
+
+set LIEUX;
+
+##### Variables #####
+
+var departArrivee{i in LIEUX, j in LIEUX}, binary;
+
+var ordrePassage{i in LIEUX}, integer,>=0;
+
+##### Constants: Data to load #####
+
+param distances{i in LIEUX, j in LIEUX};
+
+param taille;
+
+##### Constraints #####
+s.t. quunDepart{i in LIEUX}:
+ sum{j in LIEUX} departArrivee[i,j] = 1;
+
+ quunArrivee{j in LIEUX}: 
+ sum{i in LIEUX} departArrivee[i,j] = 1;
+ 
+ departDiffArrivee:
+ sum{i in LIEUX} departArrivee[i,i] = 0;
+ 
+ initOrdre {i in MAGASIN}:
+ ordrePassage[i] = 1;
+
+ recOrdreBigMSup{i in LIEUX, j in (LIEUX diff MAGASIN) : i!=j}:
+ ordrePassage[j]-(ordrePassage[i]+1) <= taille*(1-departArrivee[i,j]);
+
+ recOrdreBigMInf{i in LIEUX, j in (LIEUX diff MAGASIN) : i!=j}:
+ ordrePassage[j]-(ordrePassage[i]+1) >= -taille*(1-departArrivee[i,j]);
+
+/*
+ diffOrdre:
+ sum{i in LIEUX} ordrePassage[i] = taille*(taille+1)/2;
+*/
+
+##### Objective #####
+
+minimize distancesParcourusTot:  sum{i in LIEUX, j in LIEUX} departArrivee[i,j]*distances[i,j];
+end;

@@ -1,0 +1,41 @@
+#Donnees de tests pour le problème de gestion de personnelle
+
+data;
+
+set PERSONNES :=
+Michel
+Patrice
+Benjamin
+Lucas
+Matheo
+Nicolas
+Jean
+Hugo
+Jacquie
+Marc;
+
+set POSTES :=
+AssemblagePieces
+Decoupe
+Extrusion
+Moulage
+Decape
+Bavurage
+Soudure
+Approvisionnement
+ControleVisuel
+ControleMesure;
+
+param coutFormation: AssemblagePieces Decoupe Extrusion Moulage Decape Bavurage Soudure Approvisionnement ControleVisuel ControleMesure :=
+Michel 100 29 40 192 129 182 294 139 1029 492
+Patrice 1928 291 204 492 192 1048 83 174 163 748
+Benjamin 182 192 389 102 817 492 101 10 932 129
+Lucas 32 384 492 35 923 482 392 384 293 843
+Matheo  237 910 28 839 764 834 923 842 93 184
+Nicolas 132 323 492 76 823 947 283 197 642 10
+Jean 239 482 923 384 34 829 743 823 182 829
+Hugo 239 727 303 918 737 842 83 284 80 283
+Jacquie 32 291 374 34 287 392 758 483 738 920
+Marc 943 494 3859 387 2983 90 3298 387 482 902;
+
+end;

@@ -1,0 +1,17 @@
+#Donnees de tests pour le problème de gestion de personnelle
+
+data;
+
+set PERSONNES :=
+Michel
+Patrice;
+
+set POSTES :=
+Boulanger
+Charcutier;
+
+param coutFormation: Boulanger Charcutier :=
+Michel 3 10
+Patrice 50 30;
+
+end;
